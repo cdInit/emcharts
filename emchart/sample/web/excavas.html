@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body onload="load();">
+	<script src="/modules/excanvas/excanvas.js"></script>
+<!-- <script src="excanvas_source.js"></script> -->
+
+<script>
+	function load(argument) {
+		var canvas = document.getElementById('canvas');
+		  if (canvas.getContext) {
+		    var ctx = canvas.getContext('2d');
+		    console.info(ctx);
+		    ctx.fillRect(25,25,100,100);
+		    ctx.clearRect(45,45,60,60);
+		    ctx.strokeRect(50,50,50,50);
+		}
+	}
+</script>
+
+		
+
+	<canvas id="canvas" width="400" height="300"></canvas>
+</body>
+</html>
+
